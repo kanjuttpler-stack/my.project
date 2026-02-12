@@ -1,0 +1,134 @@
+/* Reset dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f8;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 800px;
+  margin: 30px auto;
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  opacity: 0; /* Untuk animasi fade-in */
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+h2 {
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 5px;
+  color: #3498db;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.profile {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.profile img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  object-fit: cover;
+  border: 3px solid #3498db;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+td {
+  padding: 8px;
+  vertical-align: top;
+  border-bottom: 1px solid #eee;
+}
+
+td:first-child {
+  font-weight: bold;
+  width: 30%;
+}
+
+ul {
+  margin-left: 20px;
+  list-style-type: disc;
+}
+
+ul li {
+  margin-bottom: 5px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 30px;
+  color: gray;
+  font-size: 14px;
+}
+
+.btn {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #2980b9;
+}
+
+/* Responsivitas untuk mobile */
+@media (max-width: 768px) {
+  .container {
+    margin: 10px;
+    padding: 15px;
+  }
+
+  .profile img {
+    width: 100px;
+    height: 100px;
+  }
+
+  table {
+    font-size: 14px;
+  }
+
+  td {
+    padding: 5px;
+  }
+
+  ul {
+    margin-left: 15px;
+  }
+}
